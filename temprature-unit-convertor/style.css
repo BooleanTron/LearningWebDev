@@ -1,0 +1,112 @@
+body{
+  background: url('resources/image.jpg') center center / cover no-repeat;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+form{
+  font-family: sans-serif;
+  width: 30%;
+  max-width: 350px;
+  min-width: 300px;
+  background-color: rgba(0,0,0, 0.25);
+  backdrop-filter: blur(1.5em);
+  border-radius: 01em;
+  border: 4px solid rgba( 255, 165, 0, 0.65);
+  min-height: 475px;
+  max-height: 600px;
+  height: 45%;
+  margin-inline: auto;
+  margin-top: 6em;
+  color: rgb(255, 244, 232);
+  display: block;
+}
+
+button {
+  margin-top: 20px;
+  background: linear-gradient(145deg, #ff4e00, #ffb347);
+  color: #1a1a1a; /* dark lava rock text */
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 94, 0, 0.4),
+              0 0 20px rgba(255, 130, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(145deg, #ff6600, #ffd080);
+  box-shadow: 0 0 12px rgba(255, 94, 0, 0.6),
+              0 0 24px rgba(255, 140, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 8px rgba(255, 94, 0, 0.5);
+}
+
+
+h1{
+  font-size: 2.5em;
+}
+
+#tempratureInput{
+  background: rgba(26, 26, 26, 0.85); /* dark lava rock base */
+  color: rgb(255, 244, 232); /* soft warm white text */
+  border: 1px solid rgba(255, 94, 0, 0.5); /* molten orange border */
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 50%;
+  box-shadow: 0 0 6px rgba(255, 94, 0, 0.2);
+  transition: all 0.3s ease;
+  outline: none;
+  margin-bottom: 2em;
+}
+
+/* Style radio buttons */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 94, 0, 0.6);
+  border-radius: 50%;
+  background: rgba(26, 26, 26, 0.85);
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 8px;
+  box-shadow: 0 0 4px rgba(255, 94, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+input[type="radio"]:checked {
+  background: radial-gradient(circle at center, #ff4e00 50%, #1a1a1a 52%);
+  box-shadow: 0 0 8px rgba(255, 94, 0, 0.6),
+              0 0 16px rgba(255, 140, 0, 0.4);
+  border-color: #ff4e00;
+}
+
+/* Style labels */
+label {
+  color: rgb(255, 244, 232); /* warm soft white */
+  font-size: 1.25em;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+input[type="radio"]:checked + label {
+  color: #ffb347; /* glowing orange-gold for selected */
+}
+
+p{
+  background-color: rgba(0,0,0, 0.45);
+  font-size: 2em;
+}
+
