@@ -26,19 +26,20 @@
 //let firstname = fullname.slice(0, fullname.indexOf(" "));
 //console.log(firstname);
 
-//*********************        METHOD CHAINING      ****************************************************************************************
-
-//NO METHOD CHAINING 
+//*********************        METHOD CHAINING      **************************************************************************************** 
 let username = window.prompt("Enter your Username");
 
-username = username.trim();
-let letter = username.charAt(0);
-letter = letter.toUpperCase();
+//NO METHOD CHAINING
+//username = username.trim();
+//let letter = username.charAt(0);
+//letter = letter.toUpperCase();
 
-let extraChars = username.slice(1);
-extraChars = extraChars.toLowerCase();
+//let extraChars = username.slice(1);
+//extraChars = extraChars.toLowerCase();
 
-username = letter + extraChars;
+//username = letter + extraChars;
 
+//MEHTOD CHAINING
+username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
 console.log(username);
 
