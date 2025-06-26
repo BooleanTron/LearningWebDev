@@ -1,0 +1,53 @@
+
+body {
+  background-image: url('resources/animecafe.png');
+  background-size: cover;        /* Makes the image cover the whole screen */
+  background-repeat: no-repeat;  /* Prevents the image from repeating */
+  background-position: center;
+  margin: 0;
+  height: 100vh;/* Centers the image */
+}
+label{
+  font-family: 'Orbitron';
+  font-size: 30em;
+  color: rgba(255,255,255,0.7);
+}
+#container{
+  display: block;
+  width: 45%;
+  align-items: center;
+  text-align: center;
+  margin: 5em auto;
+  background-color: rgba(238, 238, 238, 0.3);
+  border: solid 1px purple;
+  border-radius: 2em;
+  backdrop-filter: blur(8px);   
+}
+#BtnDiv{
+  display: flex;
+  justify-content: space-around;
+}
+.buttons{
+  width: 25%;
+  font-size: 2.5em;
+  margin-bottom: 2em;
+  height: 2em;
+  background-color: rgba(158, 98, 255, 0.25);  
+  color: #dfcfff;                           
+  border: 1px solid rgba(158, 98, 255, 0.6); 
+  backdrop-filter: blur(8px);                
+  border-radius: 12px;
+  transition: 0.3s ease;  
+  cursor: pointer;
+ 
+}
+.buttons:hover{
+  background: linear-gradient(
+  135deg,
+  rgba(0, 255, 255, 0.3),
+  rgba(158, 98, 255, 0.3)
+);
+
+  color: #ffffff                             
+  border: 1px solid rgba(158, 98, 255, 0.8);  
+}

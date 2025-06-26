@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>checklist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form>
+    <div class="survey">
+    <input type="checkbox" id="myCheckbox">
+    <label for="myCheckbox">Subscribed</label>
+    <br>
+    <input type="radio" id="VisaBtn" name="card" class="radioBtn">
+    <label for="VisaBtn">Visa</label>
+    <br>
+    <input type="radio" id="MasterBtn" name="card" class="radioBtn">
+    <label for="MasterBtn">MasterCard</label>
+    <br>
+    <input type="radio" id="PaypalBtn" name="card" class="radioBtn">
+    <label for="PaypalBtn">PayPal</label>
+    <br>
+    </div>
+    <button type="Submit" id="mySubmit">Submit</button>
+  </form>
+    <div class="result" id="result">
+      <p id="subResult"></p>
+      <p id="paymentResult"></p>
+    </div>
+  
+<script src="index.js" defer></script>
+</body>
+</html>
